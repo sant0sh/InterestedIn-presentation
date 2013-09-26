@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Interested-In | Coz we're social beings</title>
+    
+    <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
+    <meta name="author" content="Bartek Szopka" />
+
+    <link href="css/fonts.css" rel="stylesheet" />
+    <link href="css/impress-demo.css" rel="stylesheet" />
+    
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+<style type="text/css">
+body {
+    background: url('img/background.jpg');
+}
+
+</style>
+<body class="impress-not-supported">
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+<div id="impress">
+     <div id="step1" class="step" data-x="1000" data-y="-1500">
+        <p> InterestedIn </p>
+        <p> A scalable cloud basednetwork application built using an Node.js</p>
+    </div>
+    <div id="step2" class="step" data-x="0" data-y="0" data-scale="4">
+        <p> Conceptual Idea </p>
+        <p>Networking students with start ups</p>
+        <p>Student interaction &middot; Competition &middot; Start Up interaction </p>
+    </div>
+
+    <div id="its" class="step" data-x="-1800" data-y="3000" data-rotate="90" data-scale="5">
+        Implementation Details
+    </div>
+
+    <div id="big" class="step" data-x="0" data-y="2100" data-rotate="180" data-scale="6">
+        <h1>Node.js</h1>
+        <ul>
+            <li> Fast and scalable network applications </li>
+            <li> Uses an event-driven,asynchronous, non-blocking I/O model </li>
+            <li> Based on Google's V8 JavaScript engine </li>
+            <li>Scalable </li>
+        </ul>
+    </div>
+    <div id="step3" class="step" data-x="3500" data-y="1500" data-rotate="180" data-scale="6">
+        <h1>NoSQL Databases</h1>
+        <ul>
+            <li> Data is not stored in the form of tables and rows  </li>
+            <li> Uses a BSON model which is more suited for network applications </li>
+            <li> Has support for handling Big Data and clustering  </li>
+            <li>Scalable </li>
+        </ul>
+    </div>
+
+    <div id="tiny" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
+        <h1>Cloud implementation-Database and image processing</h1>
+        <ul>
+            <li> The mongo Database will reside on the cloud  </li>
+            <li> The Advantage here is again scalability </li>
+            <li> The image processing too takes place over cloud   </li>
+            <li>With these two important aspects of the project being on cloud its very easy to scale </li>
+        </ul>
+    </div>
+    <div id="ing" class="step" data-x="3500" data-y="-850" data-rotate="270" data-scale="6">
+        <p>Real time network communication <b class="positioning">WebSockets</b>, <b class="rotating">Socket.IO</b> and <b class="scaling">Super-Fast interaction</b> Real-time streaming </p>
+    </div>
+
+    <div id="imagination" class="step" data-x="7000" data-y="-300" data-scale="6">
+        <p>Template Languages <b>JADE</b> STYLUS <b class="imagination">Underscore</b></p>
+    </div>
+
+    <div id="source" class="step" data-x="2800" data-y="4300" data-rotate="20" data-scale="4">
+        <p>SoftWare Engineering Principles Used</p>
+        <q><a href="http://github.com/bartaz/impress.js">OOP-JS , MVC-BackBONE.JS</a>Test Driven Incremental Development-GRUNT</q>
+    </div>
+
+    <div id="one-more-thing" class="step" data-x="6000" data-y="4000" data-scale="2">
+        <p>,Modularized programming and dependency management - Require.JS</p>
+    </div>
+    <div id="its-in-3d" class="step" data-x="6200" data-y="4300" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
+        <p><span class="have">Application</span> <span class="you">is</span> <span class="noticed">scalable</span> <span class="its">on</span> <span class="in">a</span> <b>Raspberry PI</b></p>
+        <span class="footnote">Advantages - Portability and Scope for distrubuted PODS</span>
+    </div>
+    <div id="impress.js" class="step" data-x="6000" data-y="3000" data-scale="2">
+        <p>This presentation was created using Impress.js, HTML5 and CSS3 transitions/transformations</p>
+    </div>
+
+    <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
+    </div>
+
+</div>
+
+<div class="hint">
+    <p>Use a spacebar or arrow keys to navigate</p>
+</div>
+<script>
+if ("ontouchstart" in document.documentElement) { 
+    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+}
+</script>
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+</body>
+</html>
